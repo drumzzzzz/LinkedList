@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 #include <string>
 using namespace std;
 
@@ -205,7 +206,7 @@ int main(){
 	{
 		str = ("item " + to_string(i));
 		char* cstr = new char(str.length());
-		cstr = _strdup(str.c_str());
+		cstr = strdup(str.c_str());
 		lu.addListItem(cstr);
 	}
 
